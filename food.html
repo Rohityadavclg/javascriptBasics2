@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Food Donation System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Online Food Donation System</h1>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#donate">Donate</a></li>
+				<li><a href="#listings">Listings</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<h2>Welcome to our Online Food Donation System</h2>
+			<p>Our system allows you to donate food to people in need in your community. To get started, click the Donate button below.</p>
+			<a href="#donate" class="button">Donate Now</a>
+		</section>
+		<section id="donate">
+			<h2>Donate Food</h2>
+			<form action="donation.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="food">Food Item:</label>
+				<input type="text" id="food" name="food" required>
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" min="1" required>
+				<label for="pickup">Pickup Location:</label>
+				<input type="text" id="pickup" name="pickup" required>
+				<input type="submit" value="Donate" class="button">
+			</form>
+		</section>
+		<section id="listings">
+			<h2>Food Listings</h2>
+			<p>Here are the latest food donations in our system:</p>
+			<ul>
+				<li>Apples - 10lbs - John Smith - jsmith@example.com - 123 Main St</li>
+				<li>Bread - 5 loaves - Jane Doe - jdoe@example.com - 456 Elm St</li>
+				<li>Pasta - 3 boxes - Bob Johnson - bjohnson@example.com - 789 Oak St</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form action="contact.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Send Message" class="button">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Online Food Donation System. All rights reserved.</p>
+	</footer>
+</body>
+</html>
